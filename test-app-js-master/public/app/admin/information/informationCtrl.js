@@ -13,7 +13,7 @@ function informationCtrl($scope, $loading, $localStorage, $uibModal, dialogs, to
       vm.data = resp;
       $loading.finish(`loading-container`);
       $(window).trigger('resize');
-    }).catch(() => {toastr.error(`Eroare la preluarea datelor!`);});
+    }).catch(() => {toastr.error(`Eroare la preluarea datelor!!!!!!!!!!!!!!!!`);});
   };
   load();
 

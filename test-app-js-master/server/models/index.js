@@ -26,7 +26,7 @@ module.exports = function getModels(sequelize, Sequelize) {
 
 	let arr = [
 	/** DRAFTS **/
-		{path: __dirname + '/information.js', sync: false}
+		{path: __dirname + '/information.js', sync: true}
 	];
 
 
