@@ -52,6 +52,11 @@
 				controller: 'informationCtrl',
 				controllerAs: 'vm'
 			})
+			.when('/persons', {
+				templateUrl: 'app/admin/persons/persons',
+				controller: 'personsCtrl',
+				controllerAs: 'vm'
+			})
 			// ----------------------END OTHER ACTIONS ----------------------
 			.otherwise({redirectTo: '/'});
 	}

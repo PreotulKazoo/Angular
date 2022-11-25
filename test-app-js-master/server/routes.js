@@ -5,6 +5,7 @@ module.exports = app => {
   // app.use('/api/user', require('./routes/user')(app));
 
   app.use('/api/information', require('./routes/information')(app));
+  app.use('/api/persons', require('./routes/persons')(app));
 
   app.get('/app/*', (req, res) => res.render('../../public/app/' + req.params['0']));
 
