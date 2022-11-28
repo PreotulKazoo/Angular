@@ -4,21 +4,19 @@
   .row
     form.form-horizontal
       .col-xs-12.p-bottom-10
-        label.control-label.col-xs-2 Denumire
+        label.control-label.col-xs-2 Nume / Prenume :
         .col-xs-10.p-0
-          input.form-control(ng-model='mm.modal.id')
-      .col-xs-12
-        label.control-label.col-xs-2 Tip
-        .col-xs-3.p-0
-          input.form-control(ng-model='mm.modal.nume' type='number')
-      .col-xs-12
-        label.control-label.col-xs-2 Tip
-        .col-xs-3.p-0
-          input.form-control(ng-model='mm.modal.nume' type='number')
-      .col-xs-12
-        label.control-label.col-xs-2 Tip
-        .col-xs-3.p-0
-          input.form-control(ng-model='mm.modal.nume' type='number')
+          input.form-control(ng-model='mm.modal.nume')
+        label.control-label.col-xs-2 CNP : 
+        .col-xs-10.p-0
+          input.form-control(ng-model='mm.modal.cnp')
+        label.control-label.col-xs-2 Varsta :
+        .col-xs-10.p-0
+          input.form-control(ng-model='mm.modal.varsta' type='number' disabled ='true')
+        label.control-label.col-xs-2 Masini :
+        .col-xs-10.p-0
+          input.form-control(ng-model='mm.modal.masini')
+        
         //- label.control-label.col-xs-2 Apreciată
         //- .col-xs-2.p-top-3
         //-   input(type='checkbox' ng-model='mm.modal.liked')

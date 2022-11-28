@@ -16,6 +16,7 @@
         th CNP
         th Varsta 
         th  Masini
+        th(width='5.4%' rowspan='2')
       tr.warning
         td
           input.form-control.input-xs(placeholder='Căutare...')
@@ -34,9 +35,11 @@
     table.table.table-bordered.table-hover.p-0
       tbody(infinite-scroll='vm.changeMaxLimit(vm.data, vm.limit)' infinite-scroll-distance='1' infinite-scroll-container='".view-scroll"')
         tr(ng-repeat = 'r in vm.data | limitTo: vm.limit.max' ng-dblclick='vm.edit(r, $index)')
-          td.text-center(ng-bind='r.nume')
-          td.text-center(width='150px' ng-bind='r.cnp')
-          td.text-center(width='150px' ng-bind='r.varsta')
+          td.text-center( width='19%' ng-bind='r.id')
+          td.text-center( width='19%' ng-bind='r.nume')
+          td.text-center( width='19%' ng-bind='r.cnp')
+          td.text-center( width='19%' ng-bind='r.varsta')
+          td.text-center( width='19%' ng-bind='r.masini')
           td.text-center.cursor-pointer(width='20px' ng-click='vm.edit(r, $index)' uib-tooltip='Editează rând')
             i.glyphicon.glyphicon-edit.text-primary
           td.text-center.cursor-pointer(width='20px' ng-click='vm.remove(r, $index)' uib-tooltip='Șterge rând')
